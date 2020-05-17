@@ -9,9 +9,13 @@ var updateCost = (function() {
       costArr.push(itemCost);
     };
   });
-  var total = costArr.reduce((sum, num) =>
-    sum + num);
-  $('#grandTotal').html(total.toFixed(2));
+  var total = costArr.length > 0 ? costArr.reduce((sum, num) => sum + num) : 0;
+    $('#grandTotal').html(total.toFixed(2)); 
 });
 
 $(document).ready(updateCost);
+
+$(document).on('click', '.remove', function() {
+  $(this).closest('tr').remove();
+  updateCost();
+});
