@@ -31,41 +31,52 @@
           </thead>
           <tbody>
             <tr>
-              <td class='item'>Salmon</td>
-              <td class='price'>60</td>
-              <td class='qty'></td>
+              <td class='item'>Milk</td>
+              <td class='price'>3.00</td>
+              <td class='qty'><input type='number'></input></td>
               <td class='cost'></td>
-              <td><button>Remove</button></td>
+              <td><button class='btn btn-xs remove'>Remove</button></td>
             </tr>
             <tr>
-              <td class='item'>Tuna</td>
-              <td class='price'>50</td>
-              <td class='qty'></td>
+              <td class='item'>Eggs</td>
+              <td class='price'>1.40</td>
+              <td class='qty'><input type='number'></input></td>
               <td class='cost'></td>
-              <td><button>Remove</button></td>
+              <td><button class='btn btn-xs remove'>Remove</button></td>
             </tr>
             <tr>
-              <td class='item'>Carp</td>
-              <td class='price'>40</td>
-              <td class='qty'></td>
+              <td class='item'>Butter</td>
+              <td class='price'>3.80</td>
+              <td class='qty'><input type='number'></input></td>
               <td class='cost'></td>
-              <td><button>Remove</button></td>
+              <td><button class='btn btn-xs remove'>Remove</button></td>
             </tr>
             <tr>
-              <td class='item'>Pork</td>
-              <td class='price'>50</td>
-              <td class='qty'></td>
+              <td class='item'>Bread</td>
+              <td class='price'>2.50</td>
+              <td class='qty'><input type='number'></input></td>
               <td class='cost'></td>
-              <td><button>Remove</button></td>
+              <td><button class='btn btn-xs remove'>Remove</button></td>
             </tr>
             <tr>
-              <td class='item'>Beef</td>
-              <td class='price'>40</td>
-              <td class='qty'></td>
+              <td class='item'>Ice cream</td>
+              <td class='price'>4.60</td>
+              <td class='qty'><input type='number'></input></td>
               <td class='cost'></td>
-              <td><button>Remove</button></td>
+              <td><button class='btn btn-xs remove'>Remove</button></td>
+            </tr><tr>
+              <td class='item'><input type='text'></input></td>
+              <td class='price'><input type='number'></input></td>
+              <td><button class='btn btn-primary btn-sm add'>Add item</button></td>
             </tr>
           </tbody>
+          <tfoot style='font-weight: bold'>
+            <tr>
+              <td colspan='3'>TOTAL COST</td>
+              <td ID='sum'></td>           
+              <td></td>
+            </tr>
+          </tfoot>
         </table>
       </div>
     </div>
