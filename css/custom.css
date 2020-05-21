@@ -1,16 +1,38 @@
-input[type=number] {
-  width: 50px;
-  text-align: right;
-}
-
+/* format input fields */
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
 }
 
+.qty input[type=number] {
+  width: 50px;
+  text-align: right;
+  padding-right: 5px;
+  border: 1.2px solid #6b96bb;
+  border-radius: 3px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); 
+}
+
+#price,
+.add {
+  width: 50px;
+  text-align: center;
+}
+
+#item {
+  max-width: 200px;
+}
+
+/* format dollar fields */
 .price::before,
 .cost::before,
 #grandTotal::before {
   content: "$ ";
+}
+
+
+/* random fomatting... */
+#lastRow {
+  height: 5em;
 }
